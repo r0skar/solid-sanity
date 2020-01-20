@@ -1,0 +1,104 @@
+# Project
+dist/
+data/
+www/
+
+# Backups
+*.tar.gz
+*.rar
+*.zip
+
+# Style declaration files
+*.css.d.ts
+*.scss.d.ts
+*.less.d.ts
+
+# Dependencies
+node_modules/
+jspm_packages/
+*.lerna_backup
+
+# Cache
+.stencil
+.cache
+.eslintcache
+.node_repl_history
+
+# Env files
+.env
+.env*
+
+# Log files
+dependencygraph.svg
+stats.html
+*report.html
+lerna-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Data
+*.zip
+*.tar
+*.rar
+*.csv
+*.dat
+*.efx
+*.gbr
+*.key
+*.pps
+*.ppt
+*.pptx
+*.sdf
+*.tax2010
+*.vcf
+*.xml
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sql
+*.sqlite3
+
+# OS
+.DS_Store
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+*.tgz
+
+# Test dirs
+lib-cov
+coverage
+.nyc_output
+
+# Bower
+bower_components
+
+# Grunt
+.grunt

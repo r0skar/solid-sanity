@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "upgrade-all": "npm-upgrade",
+    "cleanup": "concurrently 'rm -rf node_modules/.cache/' 'rm -rf dist/'",
+    "lint:types": "tsc --noEmit || true",
+    "lint:script": "eslint --color --ext .tsx,.ts,.jsx,.js . || true",
+    "lint": "concurrently 'yarn:lint:*'",
+    "format": "eslint --color --fix --ext .tsx,.ts,.jsx,.js . || true",
+    "dev": "poi public/index.html --serve --no-clear-console",
+    "build": "yarn run cleanup && poi public/index.html --prod --bundle-report --no-clear-console",
+    "serve": "https-server dist/"
+  },
+  "browserslist": [
+    "> 0.5% in AT",
+    "not ie 11",
+    "not op_mini all",
+    "not dead"
+  ],
+  "dependencies": {
+    "core-js": "3.6.4",
+    "lodash": "4.17.15",
+    "solid-js": "0.16.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@poi/plugin-bundle-report": "12.1.2",
+    "@types/lodash": "4.14.149",
+    "babel-plugin-lodash": "3.3.4",
+    "babel-plugin-transform-async-to-promises": "0.8.15",
+    "babel-preset-solid": "0.16.2",
+    "poi": "12.7.5",
+    "raw-loader": "4.0.0",
+    "typescript": "3.7.5"
+  }
+}

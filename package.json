@@ -1,0 +1,39 @@
+{
+  "name": "sanity-solid",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "web",
+    "studio"
+  ],
+  "scripts": {
+    "web:lint": "yarn workspace web lint",
+    "web:format": "yarn workspace web format",
+    "web:upgrade": "yarn workspace web upgrade-all",
+    "web:dev": "yarn workspace web dev",
+    "web:build": "yarn workspace web build",
+    "web:serve": "yarn workspace web serve",
+    "studio:lint": "yarn workspace studio lint",
+    "studio:format": "yarn workspace studio format",
+    "studio:cleanup": "yarn workspace studio run cleanup",
+    "studio:upgrade": "yarn workspace studio upgrade-all",
+    "studio:dev": "yarn workspace studio dev",
+    "studio:build": "yarn workspace studio build",
+    "studio:serve": "yarn workspace studio serve",
+    "upgrade-all": "npm-upgrade && yarn studio:upgrade && yarn web:upgrade",
+    "cleanup": "concurrently 'rm -rf node_modules/.cache/' 'yarn studio:cleanup' 'yarn web:cleanup'",
+    "lint": "concurrently 'yarn studio:lint' 'yarn web:lint'",
+    "format": "concurrently 'yarn studio:format' 'yarn web:format'",
+    "dev": "concurrently 'yarn studio:dev' 'yarn web:dev'",
+    "build": "rm -rf dist && concurrently --kill-others-on-fail 'yarn studio:build' 'yarn web:build' && cp -r web/dist dist && cp -r studio/dist dist/studio",
+    "serve": "https-server dist/"
+  },
+  "devDependencies": {
+    "@r0skar/eslint-config-prettier": "git+https://github.com/r0skar/eslint-config-prettier.git",
+    "@sanity/cli": "0.147.3",
+    "concurrently": "5.0.2",
+    "eslint": "6.8.0",
+    "npm-upgrade": "2.0.2",
+    "prettier": "1.19.1"
+  }
+}

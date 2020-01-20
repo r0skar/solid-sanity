@@ -1,0 +1,29 @@
+{
+  "name": "studio",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "upgrade-all": "npm-upgrade",
+    "cleanup": "concurrently 'rm -rf node_modules/.cache/' 'rm -rf dist/'",
+    "backup": "sanity dataset export production",
+    "lint:script": "eslint --color --ext .tsx,.ts,.jsx,.js . || true",
+    "lint": "concurrently 'yarn:lint:*'",
+    "format": "eslint --color --fix --ext .tsx,.ts,.jsx,.js . || true",
+    "dev": "sanity start",
+    "build": "yarn run cleanup && sanity build",
+    "serve": "https-server dist/"
+  },
+  "dependencies": {
+    "@sanity/base": "0.147.8",
+    "@sanity/components": "0.147.9",
+    "@sanity/core": "0.147.9",
+    "@sanity/default-layout": "0.147.9",
+    "@sanity/default-login": "0.147.0",
+    "@sanity/desk-tool": "0.147.9",
+    "@sanity/google-maps-input": "0.147.9",
+    "prop-types": "15.7",
+    "react": "16.12",
+    "react-dom": "16.12",
+    "react-icons": "3.8.0"
+  }
+}

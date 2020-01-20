@@ -1,0 +1,28 @@
+{
+  "include": ["src", "@types"],
+  "compilerOptions": {
+    "pretty": true,
+    "noEmit": true,
+    "strict": true,
+    "allowJs": true,
+    "alwaysStrict": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "typeRoots": [
+      "../node_modules/@types",
+      "../node_modules/babel-plugin-jsx-dom-expressions",
+      "@types"
+    ]
+  }
+}
