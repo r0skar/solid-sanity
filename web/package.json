@@ -21,7 +21,9 @@
   ],
   "dependencies": {
     "core-js": "3.6.4",
+    "history": "4.10.1",
     "lodash": "4.17.15",
+    "path-parser": "6.1.0",
     "polished": "3.4.2",
     "solid-js": "0.16.2",
     "typestyle": "2.0.4"
@@ -31,6 +33,7 @@
     "@babel/preset-env": "7.8.3",
     "@poi/plugin-bundle-report": "12.1.2",
     "@r0skar/destyle.css": "git+https://github.com/r0skar/destyle.css.git",
+    "@types/history": "4.7.4",
     "@types/lodash": "4.14.149",
     "babel-plugin-lodash": "3.3.4",
     "babel-plugin-transform-async-to-promises": "0.8.15",
