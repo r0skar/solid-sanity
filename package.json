@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@r0skar/eslint-config-prettier": "git+https://github.com/r0skar/eslint-config-prettier.git",
-    "@sanity/cli": "0.147.3",
+    "@sanity/cli": "0.147.8",
     "concurrently": "5.0.2",
     "eslint": "6.8.0",
     "npm-upgrade": "2.0.2",

@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "Cinema demo"
+    "name": "Cinema demo",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "02u62x08",
@@ -13,7 +14,10 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "@sanity/google-maps-input"
+    "@sanity/google-maps-input",
+    "@sanity/vision",
+    "@sanity/color-input",
+    "media"
   ],
   "parts": [
     {
