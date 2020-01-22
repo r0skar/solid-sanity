@@ -1,6 +1,6 @@
 {
-  "name": "sanity-solid",
-  "short_name": "sanity-solid",
+  "name": "solid-sanity",
+  "short_name": "solid-sanity",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "standalone",

@@ -14,7 +14,7 @@
         "breakOnLoad": true,
         "sourceMaps": true,
         "sourceMapPathOverrides": {
-          "/__HDD/__persistent/dev/sanity-solid/web/src/*": "${webRoot}/*",
+          "/__HDD/__persistent/dev/solid-sanity/web/src/*": "${webRoot}/*",
         }
       },
       {
@@ -27,7 +27,7 @@
         "breakOnLoad": true,
         "sourceMaps": true,
         "sourceMapPathOverrides": {
-          "/__HDD/__persistent/dev/sanity-solid/studio/*": "${webRoot}/*",
+          "/__HDD/__persistent/dev/solid-sanity/studio/*": "${webRoot}/*",
         }
       }
   ]
