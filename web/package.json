@@ -22,7 +22,7 @@
   "dependencies": {
     "core-js": "3.6.4",
     "history": "4.10.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "path-parser": "6.1.0",
     "polished": "3.4.2",
     "solid-js": "0.16.2",
